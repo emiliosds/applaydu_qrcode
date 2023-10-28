@@ -1,8 +1,5 @@
-#FROM alpine:latest as base
-#RUN apk add --update py-pip
-
-FROM ubuntu-latest as base
-RUN apt-get update && apt-get install -y python3-pip
+FROM alpine:latest as base
+RUN apk add --update py-pip
 
 RUN pip install --upgrade pip
 RUN pip install pipenv
