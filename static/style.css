@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+div.container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container-image img {
+    width: 20%;
+    margin-top: 5%;
+}

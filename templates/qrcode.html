@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>QR Codes</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="container-image">
+    <img src="{{ qrcode.svg_data_uri(dark='darkblue') }}">
+  </div>
+  <div>
+    <p>Para acessar uma nova imagem, altere o código na barra de endereço.</p>
+  </div>
+
+  <div>
+    <p><a href="/">Home</a></p>
+  </div>
+</body>
+
+</html>
