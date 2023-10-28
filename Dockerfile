@@ -1,11 +1,11 @@
 FROM alpine:latest as base
 RUN apk add --update py-pip
 
-RUN pip install --upgrade pip
-RUN pip install pipenv
+# RUN pip install --upgrade pip
+# RUN pip install pipenv
 
-COPY Pipfile .
-COPY Pipfile.lock .
+# COPY Pipfile .
+# COPY Pipfile.lock .
 
 # RUN pipenv install --system --deploy
 
